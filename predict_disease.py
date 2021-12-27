@@ -209,11 +209,11 @@ plt.title("Number of neighbours VS Score")
 plt.legend()
 plt.show()
 
-KNN = KNeighborsClassifier(n_neighbors=15)
+KNN = KNeighborsClassifier(n_neighbors=18)
 # Fit the model
 KNN.fit(X_train, y_train)
 # Get the score
-KNN.score(X_test, y_test)  # 0.68, Still awful
+KNN.score(X_test, y_test)  # 0.75, Still awful
 
 # Let's try tune the SVC
 sp_vec = SVC(kernel='linear', degree=6, C=4.9995)
